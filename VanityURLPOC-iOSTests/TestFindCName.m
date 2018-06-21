@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "FindCName.h"
 
 @interface TestFindCName : XCTestCase
 
@@ -25,7 +26,9 @@
 }
 
 - (void) testFindCName {
-    
+    NSString *hostName = @"dan.sigmanetcorp.us";
+    NSString *expectedCName = @"haidang.customerdomains.oktapreview.com";
+    XCTAssertTrue([[FindCName findCNameWithHost:hostName] isEqualToString:expectedCName]);
 }
 
 - (void)testExample {
