@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <netdb.h>
 #import <dns_sd.h>
+#import "FindCName.h"
 
 @interface ViewController ()
 
@@ -20,31 +20,6 @@ static ViewController *viewController;
 
 @implementation ViewController
 
-
-- (NSString *) canonicalAddressForHostAddress: (NSString *)hostAddess {
-    const char* hostAddress_char = [hostAddess UTF8String];
-    struct addrinfo hints, *res;
-    int retval;
-    
-    memset(&hints, 0, sizeof(struct addrinfo));
-    hints.ai_family = AF_INET;
-    hints.ai_flags = AI_CANONNAME;
-    
-    retval = getaddrinfo(hostAddress_char, NULL, &hints, &res);
-    
-    
-    if (retval == 0 && res->ai_canonname) {
-        return [NSString stringWithUTF8String:res->ai_canonname];
-    }
-    return nil;
-}
-
-
-
-
-
-
-     
 - (void) showUserAlertWithString: (NSString *)string {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"URL POC" message:[NSString stringWithFormat:@"URL return from %@: %@", self.editText.text, string] preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *acknowledge = [UIAlertAction actionWithTitle:@"Acknowledge" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -54,11 +29,9 @@ static ViewController *viewController;
     [self presentViewController:alert animated:YES completion:nil];
 }
 
-
-
 - (IBAction)touchButton:(UIButton *)sender {
     NSString *userInput = self.editText.text;
-    NSString *canAddr = [self canonicalAddressForHostAddress:userInput];
+    NSString *canAddr = [FindCName findCNameWithHost:userInput];
     [self showUserAlertWithString:canAddr];
 }
 

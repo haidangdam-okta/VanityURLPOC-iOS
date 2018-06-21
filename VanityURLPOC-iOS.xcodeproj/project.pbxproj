@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D81DAC6020DC4B9700709774 /* FindCName.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DAC5F20DC4B9700709774 /* FindCName.m */; };
+		D81DAC6820DC4D5100709774 /* VanityURLPOC_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DAC6720DC4D5100709774 /* VanityURLPOC_iOSTests.m */; };
+		D81DAC7020DC4D7100709774 /* TestFindCName.m in Sources */ = {isa = PBXBuildFile; fileRef = D81DAC6F20DC4D7100709774 /* TestFindCName.m */; };
 		D87230C620D871DD00441E42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D87230C520D871DD00441E42 /* AppDelegate.m */; };
 		D87230C920D871DD00441E42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87230C820D871DD00441E42 /* ViewController.m */; };
 		D87230CC20D871DD00441E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87230CA20D871DD00441E42 /* Main.storyboard */; };
@@ -16,7 +19,23 @@
 		D87230D720D871DE00441E42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D87230D620D871DE00441E42 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D81DAC6A20DC4D5100709774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D87230B920D871DC00441E42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D87230C020D871DC00441E42;
+			remoteInfo = "VanityURLPOC-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D81DAC5E20DC4B4D00709774 /* FindCName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindCName.h; sourceTree = "<group>"; };
+		D81DAC5F20DC4B9700709774 /* FindCName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindCName.m; sourceTree = "<group>"; };
+		D81DAC6520DC4D5000709774 /* VanityURLPOC-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VanityURLPOC-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D81DAC6720DC4D5100709774 /* VanityURLPOC_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VanityURLPOC_iOSTests.m; sourceTree = "<group>"; };
+		D81DAC6920DC4D5100709774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D81DAC6F20DC4D7100709774 /* TestFindCName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestFindCName.m; sourceTree = "<group>"; };
 		D87230C120D871DC00441E42 /* VanityURLPOC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VanityURLPOC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87230C420D871DD00441E42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D87230C520D871DD00441E42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D81DAC6220DC4D5000709774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D87230BE20D871DC00441E42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +67,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D81DAC6620DC4D5100709774 /* VanityURLPOC-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D81DAC6F20DC4D7100709774 /* TestFindCName.m */,
+				D81DAC6720DC4D5100709774 /* VanityURLPOC_iOSTests.m */,
+				D81DAC6920DC4D5100709774 /* Info.plist */,
+			);
+			path = "VanityURLPOC-iOSTests";
+			sourceTree = "<group>";
+		};
 		D87230B820D871DC00441E42 = {
 			isa = PBXGroup;
 			children = (
 				D87230C320D871DD00441E42 /* VanityURLPOC-iOS */,
+				D81DAC6620DC4D5100709774 /* VanityURLPOC-iOSTests */,
 				D87230C220D871DC00441E42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				D87230C120D871DC00441E42 /* VanityURLPOC-iOS.app */,
+				D81DAC6520DC4D5000709774 /* VanityURLPOC-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +108,8 @@
 				D87230D520D871DE00441E42 /* Info.plist */,
 				D87230D620D871DE00441E42 /* main.m */,
 				D87230CD20D871DD00441E42 /* VanityURLPOC_iOS.xcdatamodeld */,
+				D81DAC5E20DC4B4D00709774 /* FindCName.h */,
+				D81DAC5F20DC4B9700709774 /* FindCName.m */,
 			);
 			path = "VanityURLPOC-iOS";
 			sourceTree = "<group>";
@@ -77,6 +117,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D81DAC6420DC4D5000709774 /* VanityURLPOC-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D81DAC6C20DC4D5100709774 /* Build configuration list for PBXNativeTarget "VanityURLPOC-iOSTests" */;
+			buildPhases = (
+				D81DAC6120DC4D5000709774 /* Sources */,
+				D81DAC6220DC4D5000709774 /* Frameworks */,
+				D81DAC6320DC4D5000709774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D81DAC6B20DC4D5100709774 /* PBXTargetDependency */,
+			);
+			name = "VanityURLPOC-iOSTests";
+			productName = "VanityURLPOC-iOSTests";
+			productReference = D81DAC6520DC4D5000709774 /* VanityURLPOC-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D87230C020D871DC00441E42 /* VanityURLPOC-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D87230DA20D871DE00441E42 /* Build configuration list for PBXNativeTarget "VanityURLPOC-iOS" */;
@@ -103,6 +161,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Hai-Dang Dam";
 				TargetAttributes = {
+					D81DAC6420DC4D5000709774 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D87230C020D871DC00441E42;
+					};
 					D87230C020D871DC00441E42 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -122,11 +184,19 @@
 			projectRoot = "";
 			targets = (
 				D87230C020D871DC00441E42 /* VanityURLPOC-iOS */,
+				D81DAC6420DC4D5000709774 /* VanityURLPOC-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D81DAC6320DC4D5000709774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D87230BF20D871DC00441E42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +210,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D81DAC6120DC4D5000709774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D81DAC6820DC4D5100709774 /* VanityURLPOC_iOSTests.m in Sources */,
+				D81DAC7020DC4D7100709774 /* TestFindCName.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D87230BD20D871DC00441E42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,10 +227,19 @@
 				D87230C920D871DD00441E42 /* ViewController.m in Sources */,
 				D87230D720D871DE00441E42 /* main.m in Sources */,
 				D87230C620D871DD00441E42 /* AppDelegate.m in Sources */,
+				D81DAC6020DC4B9700709774 /* FindCName.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D81DAC6B20DC4D5100709774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D87230C020D871DC00441E42 /* VanityURLPOC-iOS */;
+			targetProxy = D81DAC6A20DC4D5100709774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D87230CA20D871DD00441E42 /* Main.storyboard */ = {
@@ -173,6 +261,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D81DAC6D20DC4D5100709774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VanityURLPOC-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haidang.VanityURLPOC-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VanityURLPOC-iOS.app/VanityURLPOC-iOS";
+			};
+			name = Debug;
+		};
+		D81DAC6E20DC4D5100709774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "VanityURLPOC-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.haidang.VanityURLPOC-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VanityURLPOC-iOS.app/VanityURLPOC-iOS";
+			};
+			name = Release;
+		};
 		D87230D820D871DE00441E42 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -318,6 +442,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D81DAC6C20DC4D5100709774 /* Build configuration list for PBXNativeTarget "VanityURLPOC-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D81DAC6D20DC4D5100709774 /* Debug */,
+				D81DAC6E20DC4D5100709774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D87230BC20D871DC00441E42 /* Build configuration list for PBXProject "VanityURLPOC-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
